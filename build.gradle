@@ -1,0 +1,19 @@
+plugins{
+  id "groovy"
+  id "application"
+}
+
+group 'kyonmm'
+version '1.0-SNAPSHOT'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile 'org.codehaus.groovy:groovy-all:2.5.0-alpha-1'
+  testCompile 'org.spockframework:spock-core:1.1-groovy-2.4-rc-4'
+}
+
+
+mainClassName = "depnet.runner.Main"
